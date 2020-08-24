@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="166dp">
+
+
+        <TextView
+            android:id="@+id/dslt_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="60dp"
+            android:height="30dp"
+            android:text="Daily Sugar Level Trcker"
+            android:textAlignment="gravity" />
+
+      <!--  <DatePicker
+            android:id="@+id/dslt_calander"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dslt_Title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>-->
+        <EditText
+            android:id="@+id/dslt_calander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="150dp"
+            android:ems="10"
+            android:hint="Enter Date" />
+
+        <EditText
+            android:id="@+id/dslt_fasting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dslt_calander"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter you Fasting Sugar Level"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/dslt_postbreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dslt_fasting"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter Post Breakfast Sugar Level"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/dslt_postlunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dslt_postbreakfast"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter Post Lunch Sugar Level"
+            android:inputType="text" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dslt_postlunch">
+    <Button
+        android:id="@+id/dslt_save1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:onClick="btnSave_Click"/>
+</LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
